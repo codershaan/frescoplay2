@@ -30,7 +30,7 @@
         "react/no-unused-state": "off",
         "linebreak-style": [
             "error",
-            "unix"
+            "windows"
         ],
         "quotes": [
             "error",
