@@ -65,9 +65,13 @@ module.exports = {
   },
 
   deleteAll: function(req, res, next) {
+    
      Variant.destroy()
       .exec(function(err) {
-        if (err) return next(err);
+        if (err)
+        {
+          return next(err);
+        }
         return res.send();
       });
   },

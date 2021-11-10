@@ -1,0 +1,248 @@
+{
+    "accessories": [
+        {
+            "name": "Car Bumper Safety Guard",
+            "price": 1000
+        },
+        {
+            "name": "Car DVR Camera",
+            "price": 788
+        },
+        {
+            "name": "Central Locking System",
+            "price": 442
+        },
+        {
+            "name": "Child Seat",
+            "price": 546
+        },
+        {
+            "name": "Driveway Mirror",
+            "price": 675
+        },
+        {
+            "name": "Fire Extinguishers",
+            "price": 234
+        },
+        {
+            "name": "Fog Lamp Kit",
+            "price": 667
+        },
+        {
+            "name": "Gear Lock",
+            "price": 867
+        },
+        {
+            "name": "GPS Navigators",
+            "price": 2456
+        },
+        {
+            "name": "Mirror Lock",
+            "price": 566
+        },
+        {
+            "name": "Non Slip Mat",
+            "price": 768
+        },
+        {
+            "name": "Parking Sensors",
+            "price": 2324
+        },
+        {
+            "name": "Pedal Jack Anti-Theft Device",
+            "price": 4545
+        },
+        {
+            "name": "Pet Door Shield",
+            "price": 552
+        },
+        {
+            "name": "Pet Pad Protectors",
+            "price": 56476
+        },
+        {
+            "name": "Remote Engine Starter",
+            "price": 675
+        },
+        {
+            "name": "Reverse Parking Camera",
+            "price": 532
+        },
+        {
+            "name": "Reversing Sensors",
+            "price": 2425
+        },
+        {
+            "name": "Seat belt Pad",
+            "price": 7575
+        },
+        {
+            "name": "Steering Grip Lock",
+            "price": 4665
+        },
+        {
+            "name": "Sun Shades",
+            "price": 644
+        },
+        {
+            "name": "Vision Mirror",
+            "price": 352
+        },
+        {
+            "name": "Visor Mount",
+            "price": 9768
+        }
+    ],
+    "cars": [
+        {
+            "name": "Tata Nexon",
+            "segment": 1,
+            "description": "This is a dummy text",
+            "manufacturer": 1,
+            "variants": [
+                1,
+                2,
+                3,
+                4
+            ],
+            "accessories": [
+                1,
+                4,
+                5,
+                8
+            ]
+        },
+        {
+            "name": "Honda City",
+            "segment": 4,
+            "description": "This is a dummy text",
+            "manufacturer": 3,
+            "variants": [
+                7,
+                8,
+                9,
+                10
+            ],
+            "accessories": [
+                13,
+                15,
+                16,
+                18
+            ]
+        }
+    ],
+    "manufacturer": [
+        {
+            "name": "Tata"
+        },
+        {
+            "name": "Hyundai"
+        },
+        {
+            "name": "Honda"
+        },
+        {
+            "name": "Toyota"
+        },
+        {
+            "name": "Volkswagen"
+        },
+        {
+            "name": "Skoda"
+        },
+        {
+            "name": "Suzuki"
+        },
+        {
+            "name": "Ford"
+        }
+    ],
+    "segment": [
+        {
+            "name": "SUV"
+        },
+        {
+            "name": "Sedan"
+        },
+        {
+            "name": "HatchBack"
+        },
+        {
+            "name": "Luxury"
+        },
+        {
+            "name": "MPV"
+        },
+        {
+            "name": "Crossover"
+        },
+        {
+            "name": "Coupe"
+        },
+        {
+            "name": "Convertible"
+        }
+    ],
+    "varient": [
+        {
+            "name": "REVETRQE  XE",
+            "type": "Diesel",
+            "capacity": "1497 cc",
+            "price": "6.99 Lakh"
+        },
+        {
+            "name": "REVETRQE XM",
+            "type": "Diesel",
+            "capacity": "1497 cc",
+            "price": "7.62 Lakh"
+        },
+        {
+            "name": "REVETRQE XT",
+            "type": "Diesel",
+            "capacity": "1497 cc",
+            "price": "8.17 Lakh"
+        },
+        {
+            "name": "REVETRQN XM",
+            "type": "Petrol",
+            "capacity": "1198 cc",
+            "price": "6.72 Lakh"
+        },
+        {
+            "capacity": "4353 cc",
+            "name": "MDX",
+            "price": "5.32 Lakh",
+            "type": "Petrol"
+        },
+        {
+            "capacity": "3586 cc",
+            "name": "MDX",
+            "price": "4.69 Lakh",
+            "type": "Petrol"
+        },
+        {
+            "capacity": "6452 cc",
+            "name": "ZDX",
+            "price": "3.7 Lakh",
+            "type": "Hybrid"
+        },
+        {
+            "name": "I-DTEC VX",
+            "type": "Manual",
+            "capacity": "1498 cc",
+            "price": "13.09 Lakh"
+        },
+        {
+            "name": "I-DTEC S",
+            "type": "Petrol",
+            "capacity": "1497 cc",
+            "price": "8.72 Lakh"
+        },
+        {
+            "name": "I-VTEC SV",
+            "type": "Automatic",
+            "capacity": "1497 cc",
+            "price": "9.75 Lakh"
+        }
+    ]
+}

@@ -1,14 +1,17 @@
-[{
+[
+  {
     "name": "REVETRQE  XE",
     "type": "Diesel",
     "capacity": "1497 cc",
     "price": "6.99 Lakh"
-  }, {
+  },
+  {
     "name": "REVETRQE XM",
     "type": "Diesel",
     "capacity": "1497 cc",
     "price": "7.62 Lakh"
-  }, {
+  },
+  {
     "name": "REVETRQE XT",
     "type": "Diesel",
     "capacity": "1497 cc",
@@ -25,19 +28,22 @@
     "name": "MDX",
     "price": "5.32 Lakh",
     "type": "Petrol"
-  }, {
+  },
+  {
     "capacity": "3586 cc",
-    "name": "MDX",
+    "name": "MDX-l",
     "price": "4.69 Lakh",
     "type": "Petrol"
-  },{
+  },
+  {
     "capacity": "6452 cc",
     "name": "ZDX",
     "price": "3.7 Lakh",
     "type": "Hybrid"
-  },{
+  },
+  {
     "name": "I-DTEC VX",
-    "type": "Manual",
+    "type": "Diesel",
     "capacity": "1498 cc",
     "price": "13.09 Lakh"
   },
@@ -49,7 +55,7 @@
   },
   {
     "name": "I-VTEC SV",
-    "type": "Automatic",
+    "type": "Diesel",
     "capacity": "1497 cc",
     "price": "9.75 Lakh"
   }

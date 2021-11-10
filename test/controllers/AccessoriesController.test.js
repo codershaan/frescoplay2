@@ -17,13 +17,12 @@ describe('Accessories Controller', function () {
            console.log('A g',err);
           done(err);
         } else {
-          
           done();
         }
       });
   });
 
-  it('fetch /accessories', function (done) {
+  it('fetch', function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
       .get('/accessories/fetch')
@@ -31,43 +30,40 @@ describe('Accessories Controller', function () {
       .expect(200)
       .end(function (err, result) {
         if (err) {
-           console.log('A F',err);
+          console.log("fetch A",err)
           done(err);
         } else {
-          
           done();
         }
       });
   });
 
-  it('create /accessories', function (done) {
+  it('createA', function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .put('/accessories/create')
-      .send({})
-      .expect(400)
+      .post('/accessories/create')
+      .send(fixtures['accessories'])
+      .expect(200)
       .end(function (err, result) {
         if (err) {
-          console.log('??',err);
-
+          console.log("create A",err)
           done(err);
         } else {
-          
-
           done();
         }
       });
   });
+
 
     it('update /accessories', function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .put('/accessories/update/:1')
+      .put('/accessories/update/1')
       .send({})
-      .expect(400)
+      .expect(200)
       .end(function (err, result) {
         if (err) {
-           console.log('??',err);
+          console.log('updateA??',result.res.text);
           done(err);
         } else {
           done();
@@ -75,12 +71,34 @@ describe('Accessories Controller', function () {
       });
   });
 
-    it('delete /accessories', function (done) {
+
+
+
+    it('searcA', function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .delete('/accessories/delete/:1')
+      .get('/accessories/search?where={"name": {"contains": "Visor Mount"}}')
+      .send()
+      .expect(200)
+      .end(function (err, result) {
+        if (err) {
+          console.log("search a error",err)
+          done(err);
+        } else {
+          
+
+          done();
+        }
+      });
+  });
+
+  
+  it('delete /accessories', function (done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .delete('/accessories/delete/1')
       .send({})
-      .expect(400)
+      .expect(200)
       .end(function (err, result) {
         if (err) {
           console.log('??',err);
@@ -91,43 +109,23 @@ describe('Accessories Controller', function () {
       });
   });
 
-    it('deleteAll /accessories', function (done) {
+
+  it('deleteAll /accessories', function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .delete('/accessories/deleteAll')
+      .delete('/accessories/deleteAll/4')
       .send()
-      .expect(400)
+      .expect(200)
       .end(function (err, result) {
         if (err) {
-          console.log('??',err);
-
+          console.log("A deleteall",err)
           done(err);
         } else {
-          
-
-          
           done();
         }
       });
   });
 
-    it('search /accessories', function (done) {
-    var agent = supertest.agent(sails.hooks.http.app);
-    agent
-      .get('/accessories/search?where={"name": {"contains": "RX"}}')
-      .send()
-      .expect(404)
-      .end(function (err, result) {
-        if (err) {
-                    console.log('A S',err);
-
-          done(err);
-        } else {
-          
-
-          done();
-        }
-      });
-  });
+  
 
 });

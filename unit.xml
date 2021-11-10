@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.487" tests="35" failures="0">
-    <testsuite name="Root Suite" timestamp="2021-11-10T09:30:21" tests="0" failures="0" time="0"/>
-    <testsuite name="Accessories Controller" timestamp="2021-11-10T09:30:25" tests="7" file="C:\Users\KIIT\Documents\workspace\frescoplay2\test\controllers\AccessoriesController.test.js" failures="0" time="0.15">
-        <testcase name="Accessories Controller get /accessories" time="0.044" classname="get /accessories"/>
-        <testcase name="Accessories Controller fetch /accessories" time="0.042" classname="fetch /accessories"/>
-        <testcase name="Accessories Controller create /accessories" time="0.036" classname="create /accessories"/>
-        <testcase name="Accessories Controller update /accessories" time="0.003" classname="update /accessories"/>
-        <testcase name="Accessories Controller delete /accessories" time="0.003" classname="delete /accessories"/>
-        <testcase name="Accessories Controller deleteAll /accessories" time="0.003" classname="deleteAll /accessories"/>
-        <testcase name="Accessories Controller search /accessories" time="0.019" classname="search /accessories"/>
+<testsuites name="Mocha Tests" time="1.2810000000000001" tests="35" failures="0">
+    <testsuite name="Root Suite" timestamp="2021-11-10T17:10:46" tests="0" failures="0" time="0"/>
+    <testsuite name="Accessories Controller" timestamp="2021-11-10T17:10:49" tests="7" file="C:\Users\KIIT\Documents\workspace\frescoplay2\test\controllers\AccessoriesController.test.js" failures="0" time="0.251">
+        <testcase name="Accessories Controller get /accessories" time="0.063" classname="get /accessories"/>
+        <testcase name="Accessories Controller fetch" time="0.047" classname="fetch"/>
+        <testcase name="Accessories Controller createA" time="0.031" classname="createA"/>
+        <testcase name="Accessories Controller update /accessories" time="0.016" classname="update /accessories"/>
+        <testcase name="Accessories Controller searcA" time="0.016" classname="searcA"/>
+        <testcase name="Accessories Controller delete /accessories" time="0.047" classname="delete /accessories"/>
+        <testcase name="Accessories Controller deleteAll /accessories" time="0.031" classname="deleteAll /accessories"/>
     </testsuite>
-    <testsuite name="cars Controller" timestamp="2021-11-10T09:30:25" tests="7" file="C:\Users\KIIT\Documents\workspace\frescoplay2\test\controllers\CarsController.test.js" failures="0" time="0.133">
-        <testcase name="cars Controller get /cars" time="0.036" classname="get /cars"/>
-        <testcase name="cars Controller fetch /cars" time="0.037" classname="fetch /cars"/>
-        <testcase name="cars Controller create /cars" time="0.018" classname="create /cars"/>
-        <testcase name="cars Controller update /cars" time="0.008" classname="update /cars"/>
-        <testcase name="cars Controller delete /cars" time="0.005" classname="delete /cars"/>
-        <testcase name="cars Controller deleteAll /cars" time="0.007" classname="deleteAll /cars"/>
-        <testcase name="cars Controller search /cars" time="0.022" classname="search /cars"/>
+    <testsuite name="cars Controller" timestamp="2021-11-10T17:10:49" tests="10" file="C:\Users\KIIT\Documents\workspace\frescoplay2\test\controllers\CarsController.test.js" failures="0" time="0.36">
+        <testcase name="cars Controller get /cars" time="0.031" classname="get /cars"/>
+        <testcase name="cars Controller fetch /cars" time="0.031" classname="fetch /cars"/>
+        <testcase name="cars Controller create /manufacturer" time="0.019" classname="create /manufacturer"/>
+        <testcase name="cars Controller create /segment" time="0.011" classname="create /segment"/>
+        <testcase name="cars Controller create /variant" time="0.01" classname="create /variant"/>
+        <testcase name="cars Controller create /cars ccc" time="0.055" classname="create /cars ccc"/>
+        <testcase name="cars Controller cars update" time="0.046" classname="cars update"/>
+        <testcase name="cars Controller search /cars" time="0.047" classname="search /cars"/>
+        <testcase name="cars Controller delete /cars" time="0.063" classname="delete /cars"/>
+        <testcase name="cars Controller deleteAll /cars" time="0.047" classname="deleteAll /cars"/>
     </testsuite>
-    <testsuite name="manufacturer Controller" timestamp="2021-11-10T09:30:25" tests="7" file="C:\Users\KIIT\Documents\workspace\frescoplay2\test\controllers\ManufacturerController.test.js" failures="0" time="0.046000000000000006">
-        <testcase name="manufacturer Controller get /manufacturer" time="0.025" classname="get /manufacturer"/>
-        <testcase name="manufacturer Controller fetch /manufacturer" time="0.004" classname="fetch /manufacturer"/>
-        <testcase name="manufacturer Controller create /manufacturer" time="0.004" classname="create /manufacturer"/>
-        <testcase name="manufacturer Controller update /manufacturer" time="0.005" classname="update /manufacturer"/>
-        <testcase name="manufacturer Controller delete /manufacturer" time="0.003" classname="delete /manufacturer"/>
-        <testcase name="manufacturer Controller deleteAll /manufacturer" time="0.003" classname="deleteAll /manufacturer"/>
-        <testcase name="manufacturer Controller search /manufacturer" time="0.002" classname="search /manufacturer"/>
+    <testsuite name="manufacturer Controller" timestamp="2021-11-10T17:10:49" tests="6" file="C:\Users\KIIT\Documents\workspace\frescoplay2\test\controllers\ManufacturerController.test.js" failures="0" time="0.15600000000000003">
+        <testcase name="manufacturer Controller get /manufacturer" time="0.047" classname="get /manufacturer"/>
+        <testcase name="manufacturer Controller fetch /manufacturer" time="0" classname="fetch /manufacturer"/>
+        <testcase name="manufacturer Controller update /manufacturer" time="0.015" classname="update /manufacturer"/>
+        <testcase name="manufacturer Controller search /manufacturer" time="0.047" classname="search /manufacturer"/>
+        <testcase name="manufacturer Controller delete /manufacturer" time="0.031" classname="delete /manufacturer"/>
+        <testcase name="manufacturer Controller deleteAll /manufacturer" time="0.016" classname="deleteAll /manufacturer"/>
     </testsuite>
-    <testsuite name="Segment Controller" timestamp="2021-11-10T09:30:25" tests="7" file="C:\Users\KIIT\Documents\workspace\frescoplay2\test\controllers\SegmentController.test.js" failures="0" time="0.05500000000000001">
-        <testcase name="Segment Controller get /segment" time="0.036" classname="get /segment"/>
-        <testcase name="Segment Controller fetch /segment" time="0.004" classname="fetch /segment"/>
-        <testcase name="Segment Controller create /segment" time="0.001" classname="create /segment"/>
-        <testcase name="Segment Controller update /segment" time="0.003" classname="update /segment"/>
-        <testcase name="Segment Controller delete /segment" time="0.004" classname="delete /segment"/>
-        <testcase name="Segment Controller deleteAll /segment" time="0.003" classname="deleteAll /segment"/>
-        <testcase name="Segment Controller search /segment" time="0.004" classname="search /segment"/>
+    <testsuite name="Segment Controller" timestamp="2021-11-10T17:10:50" tests="6" file="C:\Users\KIIT\Documents\workspace\frescoplay2\test\controllers\SegmentController.test.js" failures="0" time="0.202">
+        <testcase name="Segment Controller get /segment" time="0.056" classname="get /segment"/>
+        <testcase name="Segment Controller fetch /segment" time="0.011" classname="fetch /segment"/>
+        <testcase name="Segment Controller update /segment" time="0.026" classname="update /segment"/>
+        <testcase name="Segment Controller search /segment" time="0.047" classname="search /segment"/>
+        <testcase name="Segment Controller delete /segment" time="0.046" classname="delete /segment"/>
+        <testcase name="Segment Controller deleteAll /segment" time="0.016" classname="deleteAll /segment"/>
     </testsuite>
-    <testsuite name="variant Controller" timestamp="2021-11-10T09:30:25" tests="7" file="C:\Users\KIIT\Documents\workspace\frescoplay2\test\controllers\VarientController.test.js" failures="0" time="0.10300000000000001">
-        <testcase name="variant Controller get /variant" time="0.038" classname="get /variant"/>
-        <testcase name="variant Controller fetch /variant" time="0.038" classname="fetch /variant"/>
-        <testcase name="variant Controller create /variant" time="0.003" classname="create /variant"/>
-        <testcase name="variant Controller update /variant" time="0.002" classname="update /variant"/>
-        <testcase name="variant Controller delete /variant" time="0.001" classname="delete /variant"/>
-        <testcase name="variant Controller deleteAll /variant" time="0.004" classname="deleteAll /variant"/>
-        <testcase name="variant Controller search /variant" time="0.017" classname="search /variant"/>
+    <testsuite name="variant Controller" timestamp="2021-11-10T17:10:50" tests="6" file="C:\Users\KIIT\Documents\workspace\frescoplay2\test\controllers\VarientController.test.js" failures="0" time="0.312">
+        <testcase name="variant Controller get /variant" time="0.063" classname="get /variant"/>
+        <testcase name="variant Controller fetch /variant" time="0.062" classname="fetch /variant"/>
+        <testcase name="variant Controller update /variant" time="0.031" classname="update /variant"/>
+        <testcase name="variant Controller search /variant" time="0.032" classname="search /variant"/>
+        <testcase name="variant Controller delete /variant" time="0.062" classname="delete /variant"/>
+        <testcase name="variant Controller deleteAll /variant" time="0.062" classname="deleteAll /variant"/>
     </testsuite>
-    <testsuite name="CarsApi Test Coverage" errors="0" package="CarsApi Test Coverage" hostname="localhost" tests="10" failures="13" time="0.111" timestamp="" id="6">
+    <testsuite name="CarsApi Test Coverage" errors="0" package="CarsApi Test Coverage" hostname="localhost" tests="10" failures="11" time="0.111" timestamp="" id="6">
         <properties/>
         <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
             <failure type="">Missing Test Coverage </failure>
@@ -72,12 +72,10 @@
         <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
             <failure type="">Missing Test Coverage </failure>
         </testcase>
-        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
-            <failure type="">Missing Test Coverage </failure>
-        </testcase>
-        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage failure">
-            <failure type="">Missing Test Coverage </failure>
-        </testcase>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage success"/>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage success"/>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage success"/>
+        <testcase name="CarsApi Test Coverage" time="0" classname="Coverage success"/>
         <testcase name="CarsApi Lint Coverage" time="0" classname="Eslint success"/>
         <testcase name="CarsApi Lint Coverage" time="0" classname="Eslint success"/>
         <testcase name="CarsApi Eslint Coverage" time="0" classname="Eslint error">

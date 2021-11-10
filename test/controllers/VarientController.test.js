@@ -41,31 +41,14 @@ it('fetch /variant', function (done) {
       });
   });
 
-  it('create /variant', function (done) {
-    var agent = supertest.agent(sails.hooks.http.app);
-    agent
-      .put('/variant/create')
-      .send({})
-      .expect(400)
-      .end(function (err, result) {
-        if (err) {
-          console.log('V c',err);
-
-          done(err);
-        } else {
-          
-
-          done();
-        }
-      });
-  });
+ 
 
     it('update /variant', function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .put('/variant/update/:1')
+      .put('/variant/update/1')
       .send({})
-      .expect(400)
+      .expect(200)
       .end(function (err, result) {
         if (err) {
            console.log('V u',err);
@@ -76,12 +59,33 @@ it('fetch /variant', function (done) {
       });
   });
 
-    it('delete /variant', function (done) {
+
+    it('search /variant', function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .delete('/variant/delete/:1')
+      .get('/variant/search?where={"name": {"contains": "ZDX"}}')
+      .send()
+      .expect(200)
+      .end(function (err, result) {
+        if (err) {
+          console.log('V S',err);
+
+          done(err);
+        } else {
+          
+
+          done();
+        }
+      });
+  });
+
+  
+  it('delete /variant', function (done) {
+    var agent = supertest.agent(sails.hooks.http.app);
+    agent
+      .delete('/variant/delete/1')
       .send({})
-      .expect(400)
+      .expect(200)
       .end(function (err, result) {
         if (err) {
           console.log('V d',err);
@@ -95,37 +99,16 @@ it('fetch /variant', function (done) {
     it('deleteAll /variant', function (done) {
     var agent = supertest.agent(sails.hooks.http.app);
     agent
-      .delete('/variant/deleteAll')
+      .delete('/variant/deleteAll/2')
       .send()
-      .expect(400)
+      .expect(200)
       .end(function (err, result) {
         if (err) {
-          console.log('V dA',err);
-
           done(err);
         } else {
           
 
           
-          done();
-        }
-      });
-  });
-
-    it('search /variant', function (done) {
-    var agent = supertest.agent(sails.hooks.http.app);
-    agent
-      .get('/variant/search?where={"name": {"contains": "RX"}}')
-      .send()
-      .expect(404)
-      .end(function (err, result) {
-        if (err) {
-          console.log('V S',err);
-
-          done(err);
-        } else {
-          
-
           done();
         }
       });
